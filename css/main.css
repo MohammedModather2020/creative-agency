@@ -17,7 +17,7 @@
    2.0- NavBar Header
    2.1- Main Section
    2.2- About Us
-   2.3- 
+   2.3- Portfolio
    2.4-  
    2.5- 
    2.6-
@@ -194,12 +194,71 @@ main .container .box .desc{
 .about-us .items .item:hover .title{
   color: #fff;
 }
-
-
-
-
-
-
+/** 2.3- Portfolio */
+.portfolio{
+  background-color: #f9f9f9;
+}
+.portfolio .box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: .3rem 1.8rem;
+  position: relative;
+}
+.portfolio .box .item{
+  padding: .8rem;
+  position: relative;
+}
+.portfolio .box .item .image img{
+  border-radius: .3rem;
+  width: 100%;
+}
+.portfolio .box .item .layer{
+  position: absolute;
+  content: "";
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 0;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: .3rem;
+  transition: height .5s ease-in-out;
+}
+.portfolio .box .item .layer .title{
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: var(--primaryColor);
+}
+.portfolio .box .item .layer .sub-title{
+  font-size: .8rem;
+  margin-top: .3rem;
+  margin-bottom: .7rem;
+  color: #fff;
+}
+.portfolio .box .item .layer .icon i{
+  color: #fff;
+  background-color: var(--primaryColor);
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-inline: .2rem;
+  border-radius: 0.3rem;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+.portfolio .box .item:hover .layer{
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+}
 
 
 
@@ -258,7 +317,7 @@ main .container .box .desc{
 /** 3.6- Section Header */
 .section-header{
   text-align: center;
-  margin-block: 1.8rem;
+  margin-bottom: 4rem;
 }
 .section-header .title{
   font-size: 1.6rem;
@@ -273,7 +332,7 @@ main .container .box .desc{
 }
 /** 3.7- Padding (Y) direction */
 .p-y{
-  padding-block: 1.7rem;
+  padding-block: 3rem;
 }
 /** 3.8- Effect Animations */
 .effect-x{
