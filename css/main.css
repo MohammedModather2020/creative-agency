@@ -2,7 +2,7 @@
 * Template Name             : Creative Agency
 * Start Date                : 9-12-2021
 * End Date                  : 
-* Last Update               : 12-12-2021 7:45 AM
+* Last Update               : 12-12-2021 8:00 AM
 * Version                   : 1.0.0
 * URL                       : 
 * GitHub URL                : https://github.com/MohammedModather2020/creative-agency.git
@@ -19,7 +19,7 @@
    2.2- About Us
    2.3- Portfolio
    2.4- Offers
-   2.5- 
+   2.5- Choose Us
    2.6-
    2.7-
 * 3- Common Style
@@ -296,8 +296,44 @@ main .container .box .desc{
 .offers .box .item:hover .text .title{
   color: var(--ascentColor);
 }
-
-
+/** 2.5- Choose Us */
+.choose-us{
+  background-color: #f9f9f9;
+}
+.choose-us .box{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.choose-us .box .section-header{
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.choose-us .box .section-header .line{
+  margin-inline: unset;
+}
+.choose-us .box .desc{
+  color: #888;
+  line-height: 1.8;
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+.choose-us .box .list{
+  list-style: none;
+}
+.choose-us .box .list li{
+  margin-bottom: 1rem;
+  font-size: .8rem;
+  color: #666;
+}
+.choose-us .box .list li i{
+  color: var(--primaryColor);
+  display: inline-block;
+  margin-inline-end: .5rem;
+}
+.choose-us .box .slider img{
+  border-radius: .5rem;
+  width: 100%;
+}
 
 
 
