@@ -21,7 +21,7 @@
    2.4- Offers
    2.5- Choose Us
    2.6- Statistic
-   2.7-
+   2.7- Pricing Table
 * 3- Common Style
    3.0- Container Section
    3.1- Overlay 
@@ -361,6 +361,72 @@ main .container .box .desc{
 .statistic .box .item .sub-title{
   font-size: .8rem;
 }
+/** 2.7- Pricing Table  */
+.pricing .plans{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 4rem;
+  position: relative;
+}
+.pricing .plans .item {
+  padding: 2rem 1.5rem;
+  flex-grow: 1;
+  border: 1px solid #e6e6e6;
+  border-radius: .5rem;
+  text-align: center;
+  transition: color .5s ease-in-out;
+}
+.pricing .plans .item > .title{
+  font-size: .9rem;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.pricing .plans .item .price{
+  height: 120px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  border: 1px solid var(--primaryColor);
+  border-radius: 50%;
+  margin-bottom: 1.4rem;
+}
+.pricing .plans .item .price .title{
+  font-size: 2rem;
+}
+.pricing .plans .item .price .month{
+  font-size: .7rem;
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.pricing .plans .item .price-list{
+  list-style: none;
+}
+.pricing .plans .item .price-list li{
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+.pricing .plans .item button{
+  text-transform: capitalize;
+}
+.pricing .plans .item:hover{
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -385,6 +451,7 @@ main .container .box .desc{
   border: 0;
   font-family: inherit !important;
   margin-inline: .5rem;
+  cursor: pointer;
 }
 .btn a{
   color: inherit;
@@ -430,21 +497,34 @@ main .container .box .desc{
   padding-block: 3rem;
 }
 /** 3.8- Effect Animations */
+.effect-y,
 .effect-x{
   position: relative;
 }
+.effect-y::after,
 .effect-x::after{
   content: "";
   position: absolute;
-  width: 0;
   top: 0;
   left: 0;
-  bottom: 0;
-  transition: width .5s ease-in-out;
   border-radius: .3rem;
   z-index: -1;
+}
+.effect-x::after{
+  width: 0;
+  bottom: 0;
+  transition: width .5s ease-in-out;
+}
+.effect-y::after{
+  height: 0;
+  right: 0;
+  transition: height .5s ease-in-out;
 }
 .effect-x:hover:after{
   background-color: var(--secondaryColor);
   width: 100%;
+}
+.effect-y:hover:after{
+  background-color: var(--secondaryColor);
+  height: 100%;
 }
