@@ -20,7 +20,7 @@
    2.3- Portfolio
    2.4- Offers
    2.5- Choose Us
-   2.6-
+   2.6- Statistic
    2.7-
 * 3- Common Style
    3.0- Container Section
@@ -334,8 +334,33 @@ main .container .box .desc{
   border-radius: .5rem;
   width: 100%;
 }
-
-
+/** 2.6- Statistic  */
+.statistic{
+  position: relative;
+  background-image: url(../assets/images/background/background2.webp);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+.statistic .box{
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.statistic .box .item .icon{
+  color: var(--primaryColor);
+}
+.statistic .box .item .title{
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.statistic .box .item .sub-title{
+  font-size: .8rem;
+}
 
 
 
