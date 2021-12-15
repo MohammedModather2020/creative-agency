@@ -22,6 +22,7 @@
    2.5- Choose Us
    2.6- Statistic
    2.7- Pricing Table
+   2.8- Testimonial
 * 3- Common Style
    3.0- Container Section
    3.1- Overlay 
@@ -416,7 +417,48 @@ main .container .box .desc{
 .pricing .plans .item:hover{
   color: #fff;
 }
-
+/** 2.8- Testimonial  */
+.testimonial{
+  position: relative;
+  background-image: url(../assets/images/background/background3.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 330px;
+}
+.testimonial .box{
+  height: 300px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+  color: #fff;
+}
+.testimonial .box .item .info{
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  margin-bottom: 1rem;
+}
+.testimonial .box .item .info img {
+  border-radius: 50%;
+  width: 50px;
+}
+.testimonial .box .item .info .name .username{
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.testimonial .box .item .info .name .job-title{
+  color: var(--primaryColor);
+  font-size: .8rem;
+  font-weight: normal;
+}
+.testimonial .box .item .desc{
+  font-size: .8rem;
+  color: #888;
+  text-align: justify;
+  line-height: 1.8rem;
+}
 
 
 

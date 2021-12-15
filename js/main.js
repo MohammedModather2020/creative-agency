@@ -1,13 +1,13 @@
 $(function () {
   'use strict';
   // trigger owl js
-  $('.owl-carousel').owlCarousel({
+  $('.choose-us .owl-carousel').owlCarousel({
     rtl: false,
     loop: true,
     animateOut: 'fadeOut',
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
     responsive: {
       0: {
         items: 1,
@@ -19,5 +19,11 @@ $(function () {
         items: 1,
       },
     },
+  });
+  $('.testimonial .owl-carousel').owlCarousel({
+    items: 1,
+    lazyLoad: true,
+    loop: true,
+    margin: 10,
   });
 });
