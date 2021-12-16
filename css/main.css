@@ -874,7 +874,7 @@ input:focus,textarea:focus{
 }
 /** 3.11- Scroll Bar */
 ::-webkit-scrollbar {
-  background-color: var(--primaryColor);
+  background-color: var(--secondaryColor);
   width: 8px;
 }
 ::-webkit-scrollbar-thumb {
@@ -882,7 +882,7 @@ input:focus,textarea:focus{
   border-radius: 7px
 }
 ::-moz-scrollbar {
-  background-color: var(--primaryColor);
+  background-color: var(--secondaryColor);
   width: 8px;
 }
 ::-moz-scrollbar-thumb {
@@ -894,7 +894,7 @@ input:focus,textarea:focus{
   -o-border-radius: 7px;
 }
 ::-o-scrollbar {
-  background-color: var(--primaryColor);
+  background-color: var(--secondaryColor);
   width: 8px;
 }
 ::-o-scrollbar-thumb {
