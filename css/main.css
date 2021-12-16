@@ -23,6 +23,7 @@
    2.6- Statistic
    2.7- Pricing Table
    2.8- Testimonial
+   2.9- Our Team
 * 3- Common Style
    3.0- Container Section
    3.1- Overlay 
@@ -459,9 +460,71 @@ main .container .box .desc{
   text-align: justify;
   line-height: 1.8rem;
 }
-
-
-
+/** 2.9- Our Team  */
+.our-team .box{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 4rem;
+}
+.our-team .box .item{
+  text-align: center;
+  position: relative;
+  padding: 1.5rem 1rem;
+  border-radius: .5rem;
+  background-color: #e6e6e6;
+}
+.our-team .box .item .image{
+  position: relative;
+}
+.our-team .box .item .image img{
+  width: 90%;
+  display: block;
+  margin: auto;
+  border-radius: .5rem;
+}
+.our-team .box .item .image .social-media{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  flex-direction: column;
+  align-items: end;
+  border-radius: .2rem;
+  transition: all .5s ease-in-out;
+  margin-right: .9rem;
+}
+.our-team .box .item .image .social-media a{
+  background-color: var(--primaryColor);
+  display: inline-block;
+  color: var(--ascentColor);
+  padding: .3rem;
+}
+.our-team .box .item .image .social-media a i{
+  height: 30px;
+  width: 30px;
+  color: var(--ascentColor);
+  border-radius: 50%;
+  line-height: 30px;
+}
+.our-team .box .item .info .name{
+  font-size: .9rem;
+  margin-top: .7rem;
+  text-transform: capitalize;
+  transition: color .5s ease-in-out;
+}
+.our-team .box .item .info .job-title{
+  font-size: .8rem;
+  font-weight: normal;
+  color: var(--primaryColor);
+}
+.our-team .box .item:hover .name{
+  color: var(--ascentColor);
+}
+.our-team .box .item:hover .image .social-media{
+  visibility: visible;
+  opacity: 1;
+}
 
 
 
@@ -542,6 +605,7 @@ main .container .box .desc{
 .effect-y,
 .effect-x{
   position: relative;
+  z-index: 999;
 }
 .effect-y::after,
 .effect-x::after{
@@ -563,10 +627,10 @@ main .container .box .desc{
   transition: height .5s ease-in-out;
 }
 .effect-x:hover:after{
-  background-color: var(--secondaryColor);
+  background-color: var(--secondaryColor) !important;
   width: 100%;
 }
 .effect-y:hover:after{
-  background-color: var(--secondaryColor);
+  background-color: var(--secondaryColor) !important;
   height: 100%;
 }
