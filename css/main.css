@@ -26,6 +26,7 @@
    2.9- Our Team
    2.10- Recent News
    2.11- Contact US
+   2.12- Footer 
 * 3- Common Style
    3.0- Container Section
    3.1- Overlay 
@@ -198,7 +199,7 @@ main .container .box .desc{
   display: block;
 }
 .about-us .items .item:hover .title{
-  color: #fff;
+  color: var(--ascentColor);
 }
 /** 2.3- Portfolio */
 .portfolio{
@@ -246,10 +247,10 @@ main .container .box .desc{
   font-size: .8rem;
   margin-top: .3rem;
   margin-bottom: .7rem;
-  color: #fff;
+  color: var(--ascentColor);
 }
 .portfolio .box .item .layer .icon i{
-  color: #fff;
+  color: var(--ascentColor);
   background-color: var(--primaryColor);
   display: inline-block;
   width: 35px;
@@ -354,7 +355,7 @@ main .container .box .desc{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
+  color: var(--ascentColor);
   text-align: center;
 }
 .statistic .box .item .icon{
@@ -420,7 +421,7 @@ main .container .box .desc{
   text-transform: capitalize;
 }
 .pricing .plans .item:hover{
-  color: #fff;
+  color: var(--ascentColor);
 }
 /** 2.8- Testimonial  */
 .testimonial{
@@ -437,7 +438,7 @@ main .container .box .desc{
   align-content: center;
   grid-template-columns: 1fr 1fr;
   column-gap: 4rem;
-  color: #fff;
+  color: var(--ascentColor);
 }
 .testimonial .box .item .info{
   display: flex;
@@ -540,7 +541,7 @@ main .container .box .desc{
   grid-template-columns:  repeat(3,1fr);
 }
 .recent-news .box .item{
-  background-color: #fff;
+  background-color: var(--ascentColor);
   border-start-start-radius: .5rem;
   border-start-end-radius: .5rem;
 }
@@ -559,11 +560,11 @@ main .container .box .desc{
   font-size: .8rem;
   display: inline-block;
   padding-right: .7rem;
-  color: #2a2a2a;
+  color: var(--secondaryColor);
 }
 .recent-news .box .item .title{
   font-size: .9rem;
-  color: #2a2a2a;
+  color: var(--secondaryColor);
   margin-top: .5rem;
   margin-left: .7rem;
 }
@@ -623,6 +624,36 @@ main .container .box .desc{
   margin-top: 1rem;
   display: block;
 }
+/** 2.12- Footer  */
+footer.footer{
+  padding-top: 1rem;
+  background-color: var(--secondaryColor);
+  text-align: center;
+}
+footer.footer .social-links{
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+  list-style: none;
+}
+footer.footer .social-links li i{
+  height: 35px;
+  width: 35px;
+  color: var(--ascentColor);
+  border-radius: .5rem;
+  background-color: #6195ff;
+  line-height: 35px;
+}
+footer.footer .copy-right{
+  font-size: .8rem;
+  color: #888;
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+
+
+
+
 
 
 
