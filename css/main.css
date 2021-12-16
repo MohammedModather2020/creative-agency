@@ -41,6 +41,7 @@
    3.8- Effect Animations
    3.9- Form Input
    3.10 PlaceHolder
+   3.11- Scroll Bar
 */
 /* 
 /** 1- Genral Style */
@@ -68,7 +69,7 @@ body{
 .navbar{
   position: fixed;
   width: 100%;
-  z-index: 999;
+  z-index: 9999;
 }
 .navbar .container{
   display: flex;
@@ -870,4 +871,33 @@ input:focus,textarea:focus{
 ::-webkit-input-placeholder{
   font-size: .8rem;
   color: #666;
+}
+/** 3.11- Scroll Bar */
+::-webkit-scrollbar {
+  background-color: var(--primaryColor);
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primaryColor);
+  border-radius: 7px
+}
+::-moz-scrollbar {
+  background-color: var(--primaryColor);
+  width: 8px;
+}
+::-moz-scrollbar-thumb {
+  background-color: var(--primaryColor);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+::-o-scrollbar {
+  background-color: var(--primaryColor);
+  width: 8px;
+}
+::-o-scrollbar-thumb {
+  background-color: var(--primaryColor);
+  border-radius: 7px;
 }
