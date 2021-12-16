@@ -662,7 +662,7 @@ footer.footer .copy-right{
 }
 /** 2.13- NavBar Mobile */
 .window{
-  display: none;
+  display: none !important;
 }
 
 
