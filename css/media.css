@@ -1,0 +1,53 @@
+@media (max-width:767px){
+  .window{
+    display: block;
+  }
+  .navbar{
+    display: none;
+  }
+  main .container .box{
+    width: 90%;
+  }
+  .choose-us .box{
+    grid-template-columns: 100%;
+  }
+  .choose-us .box .list li{
+    display: flex;
+  }
+  .statistic .box .item {
+    flex-basis: 50%;
+  }
+  .testimonial {
+    height: 550px;
+  }
+  .testimonial .box{
+    height: 500px;
+    grid-template-columns: 100%;
+  }
+  .contacts-us .form{
+    width: 100%;
+  }
+  .contacts-us .form .form-control:first-of-type{
+    display: block;
+  }
+  footer.footer .copy-right{
+    width: 100%;
+  }
+  .portfolio .box,
+  .offers .box,
+  .recent-news .box{
+    grid-template-columns: 1fr;
+  }
+  .about-us .items .item,
+  .our-team .box .item{
+    flex-basis: unset;
+  }
+  .testimonial .box .item,
+  .choose-us .box .list li,
+  .pricing .plans .item,
+  .our-team .box .item,
+  .recent-news .box .item,
+  .contacts-us .info .item {
+    margin-bottom: 1rem;
+  }
+}
