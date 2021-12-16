@@ -13,6 +13,15 @@ $(function () {
       $('.navbar').css({ backgroundColor: 'unset' });
     }
   });
+  // click button as scroll to top 
+  scrollButton.on('click', function () {
+    $('html ,body').animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
+  });
   // -------------------------------------------------------------------------->
   // list items click to move section
   $('.navbar .container .links > li a').on('click', function () {

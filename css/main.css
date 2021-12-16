@@ -27,6 +27,7 @@
    2.10- Recent News
    2.11- Contact US
    2.12- Footer 
+   2.13- Scroll Top 
 * 3- Common Style
    3.0- Container Section
    3.1- Overlay 
@@ -658,6 +659,31 @@ footer.footer .copy-right{
   color: #888;
   margin-top: 1rem;
   line-height: 1.8;
+}
+/** 2.13- Scroll Top */
+#scroll-top{
+  display: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  background: var(--primaryColor);
+  position: fixed;
+  z-index: 9999;
+  right: 15px;
+  bottom: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#scroll-top i{
+  line-height: 40px;
+}
+#scroll-top:hover{
+  background: var(--primaryColor);
 }
 /** 3- Common Style */
 /**  3.0- Container Section */
