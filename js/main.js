@@ -70,4 +70,12 @@ $(function () {
   i.onclick = function () {
     a.classList.toggle('menu-opened');
   };
+  // -------------------------------------------------------------------------->
+  // Start Loading 
+  $('.loading-overlay .spinner').fadeOut(2000,function(){
+    $('body').css('overflow','auto');
+    $(this).parent().fadeOut(2000,function(){
+        $(this).remove();
+    });
+  });
 });
