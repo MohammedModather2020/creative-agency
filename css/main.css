@@ -24,6 +24,7 @@
    2.7- Pricing Table
    2.8- Testimonial
    2.9- Our Team
+   2.10- Recent News
 * 3- Common Style
    3.0- Container Section
    3.1- Overlay 
@@ -525,9 +526,59 @@ main .container .box .desc{
   visibility: visible;
   opacity: 1;
 }
-
-
-
+/** 2.10- Recent News */
+.recent-news .box{
+  display: grid;
+  justify-content: space-between;
+  column-gap: 4rem;
+  grid-template-columns:  repeat(3,1fr);
+}
+.recent-news .box .item{
+  background-color: #f9f9f9;
+}
+.recent-news .box .item .image img{
+  width: 100%;
+  border-radius: .5rem;
+}
+.recent-news .box .item .info{
+  margin-top: .5rem;
+  margin-left: .7rem;
+}
+.recent-news .box .item .info i{
+  color: var(--primaryColor);
+}
+.recent-news .box .item .info span{
+  font-size: .8rem;
+  display: inline-block;
+  padding-right: .7rem;
+  color: #2a2a2a;
+}
+.recent-news .box .item .title{
+  font-size: .9rem;
+  color: #2a2a2a;
+  margin-top: .5rem;
+  margin-left: .7rem;
+}
+.recent-news .box .item .desc{
+  font-size: .8rem;
+  color: #888;
+  line-height: 1.8;
+  margin: .7rem;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.recent-news .box .item .link{
+  font-size: .8rem;
+  text-decoration: none;
+  color: var(--primaryColor);
+  display: inline-block;
+  padding-inline: .5rem;
+  margin-bottom: .5rem;
+}
 
 
 
