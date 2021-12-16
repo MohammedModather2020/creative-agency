@@ -13,6 +13,15 @@ $(function () {
       $('.navbar').css({ backgroundColor: 'unset' });
     }
   });
+  // click button as scroll to top 
+  scrollButton.on('click', function () {
+    $('html ,body').animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
+  });
   // -------------------------------------------------------------------------->
   // list items click to move section
   $('.navbar .container .links > li a').on('click', function () {
@@ -61,4 +70,12 @@ $(function () {
   i.onclick = function () {
     a.classList.toggle('menu-opened');
   };
+  // -------------------------------------------------------------------------->
+  // Start Loading 
+  $('.loading-overlay .spinner').fadeOut(2000,function(){
+    $('body').css('overflow','auto');
+    $(this).parent().fadeOut(2000,function(){
+        $(this).remove();
+    });
+  });
 });

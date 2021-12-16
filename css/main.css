@@ -27,6 +27,8 @@
    2.10- Recent News
    2.11- Contact US
    2.12- Footer 
+   2.13- Scroll Top 
+   2.14- Loading Overlay
 * 3- Common Style
    3.0- Container Section
    3.1- Overlay 
@@ -658,6 +660,89 @@ footer.footer .copy-right{
   color: #888;
   margin-top: 1rem;
   line-height: 1.8;
+}
+/** 2.13- Scroll Top */
+#scroll-top{
+  display: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  background: var(--primaryColor);
+  position: fixed;
+  z-index: 9999;
+  right: 15px;
+  bottom: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#scroll-top i{
+  line-height: 40px;
+}
+#scroll-top:hover{
+  background: var(--primaryColor);
+}
+/** 2.14- Loading Overlay */
+.loading-overlay{
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: var(--primaryColor);
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+}
+.spinner {
+  top: 25%;
+  margin: 100px auto;
+  width: 40px;
+  text-align: center;
+  font-size: 14px;
+  height: 40px;
+  position: relative;
+}
+.cube1, .cube2 {
+  background-color: #ffffff;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+@-webkit-keyframes sk-cubemove {
+  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% { -webkit-transform: rotate(-360deg) }
+}
+@keyframes sk-cubemove {
+  25% { 
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  } 50% { 
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  } 50.1% { 
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  } 75% { 
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+  } 100% { 
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
 }
 /** 3- Common Style */
 /**  3.0- Container Section */
