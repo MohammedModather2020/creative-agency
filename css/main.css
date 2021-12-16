@@ -2,7 +2,7 @@
 * Template Name             : Creative Agency
 * Start Date                : 9-12-2021
 * End Date                  : 
-* Last Update               : 12-12-2021 8:00 AM
+* Last Update               : 16-12-2021 4:00 PM
 * Version                   : 1.0.0
 * URL                       : 
 * GitHub URL                : https://github.com/MohammedModather2020/creative-agency.git
@@ -27,7 +27,6 @@
    2.10- Recent News
    2.11- Contact US
    2.12- Footer 
-   2.13- NavBar Mobile
 * 3- Common Style
    3.0- Container Section
    3.1- Overlay 
@@ -55,12 +54,12 @@
   --secondaryColor:#2a2a2a;
   --ascentColor:#ffffff;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 /** 1.2- Body Element */
 body{
   font-family: 'Varela Round', sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 /** 2- Section Style */
 /**  2.0- NavBar Header */
@@ -660,17 +659,6 @@ footer.footer .copy-right{
   margin-top: 1rem;
   line-height: 1.8;
 }
-/** 2.13- NavBar Mobile */
-.window{
-  display: none !important;
-}
-
-
-
-
-
-
-
 /** 3- Common Style */
 /**  3.0- Container Section */
 .container{
