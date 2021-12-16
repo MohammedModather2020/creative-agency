@@ -1,7 +1,7 @@
 $(function () {
   'use strict';
   // Add Smooth Scroll
-  // $('html , body').animate({ scrollTop: 0 }, 400);
+  $('html , body').animate({ scrollTop: 0 }, 400);
   // -------------------------------------------------------------------------->
   var scrollButton = $('#scroll-top');
   $(window).scroll(function () {
