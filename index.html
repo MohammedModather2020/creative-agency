@@ -12,10 +12,37 @@
     <!-- Owl carousel Slider -->
     <link rel="stylesheet" href="css/owl.carousel.min.css"/>
     <link rel="stylesheet" href="css/owl.theme.default.min.css"/>
+    <!-- AOS Animation Effect -->
+    <link rel="stylesheet" href="css/aos.min.css"/>
     <!-- Css Files -->
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+    <link rel="stylesheet" href="css/menu-mobile.min.css"/>
   </head>
   <body>
+    <!--* Menu Mobile-->
+    <div class="window">
+      <div class="header">
+        <div class="burger-container">
+          <div id="burger">
+            <div class="bar topBar"></div>
+            <div class="bar btmBar"></div>
+          </div> <!-- ./burger -->
+        </div> <!-- ./burger-container -->
+        <div class="icon icon-apple"></div>
+        <ul class="menu">
+          <li class="menu-item"><a data-value="" href="#">Home</a></li>
+          <li class="menu-item"><a data-value="about" href="#about">About</a></li>
+          <li class="menu-item"><a data-value="portfolio" href="#portfolio">Portfolio</a></li>
+          <li class="menu-item"><a data-value="services" href="#services">Services</a></li>
+          <li class="menu-item"><a data-value="team" href="#team">Team</a></li>
+          <li class="menu-item"><a data-value="prices" href="#prices">Prices</a></li>
+          <li class="menu-item"><a href="blog.html">Blog</a></li>
+          <li class="menu-item"><a href="#contact-us">Contact</a></li>
+        </ul> <!-- ./menu -->
+        <div class="shop icon icon-bag"></div>
+      </div> <!-- ./header -->
+    </div> <!-- ./window -->
     <!--* NavBar Header  -->
     <nav class="navbar">
       <div class="container">
@@ -23,18 +50,18 @@
           <a href="index.html"> <img src="assets/images/logo-alt.webp" alt="Image Logo" draggable="false"/></a>
         </div> <!-- ./brand -->
         <ul class="links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Prices</a></li>
-          <li><a href="">Team</a></li>
-          <li class="dropdown"><a href="">Blog <i class="fas fa-angle-down fa-fw"></i></a> 
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about" data-value='about'>About</a></li>
+          <li><a href="#portfolio" data-value='portfolio'>Portfolio</a></li>
+          <li><a href="#services" data-value='services'>Services</a></li>
+          <li><a href="#prices" data-value='prices'>Prices</a></li>
+          <li><a href="#team"data-value='tem'>Team</a></li>
+          <li class="dropdown"><a href="#blog" data-value='blog'>Blog <i class="fas fa-angle-down fa-fw"></i></a> 
             <ul class="dropdown-menu">
               <li><a href="blog.html">Blog Post</a></li>
             </ul> <!-- ./dropdown-menu -->
           </li> <!-- ./dropdown -->
-          <li><a href="">Contact</a></li>
+          <li><a href="#contact-us" data-value='contact-us'>Contact</a></li>
         </ul> <!-- ./links -->
       </div> <!-- ./container -->
     </nav> <!-- ./navbar -->
@@ -43,35 +70,35 @@
       <div class="overlay">
         <div class="container">
           <div class="box">
-            <h1 class="title">We are creative agency</h1>
-            <p class="desc">Many websites choose to display a short explanatory text in a prominent position of their web page layouts to inform visitors what the purpose of the site is.</p>
-            <button class="btn btn-secondary opacity"><a href="#">Get Started</a></button>
-            <button class="btn btn-primary opacity"><a href="#">Learn More</a></button>
+            <h1 class="title" data-aos="fade-up" data-aos-delay="100">We are creative agency</h1>
+            <p class="desc" data-aos="fade-up" data-aos-delay="200">Many websites choose to display a short explanatory text in a prominent position of their web page layouts to inform visitors what the purpose of the site is.</p>
+            <button class="btn btn-secondary opacity" data-aos="fade-left" data-aos-delay="300"><a href="#">Get Started</a></button>
+            <button class="btn btn-primary opacity" data-aos="fade-right" data-aos-delay="300"><a href="#">Learn More</a></button>
           </div> <!-- ./box -->
         </div> <!-- ./container -->
       </div> <!-- ./overlay -->
     </main>
     <!--* Start About Us -->
-    <div class="about-us p-y">
+    <div class="about-us p-y" id="about">
       <div class="container">
         <header class="section-header">
-          <h2 class="title">Welcome To Website</h2>
+          <h2 class="title" data-aos="fade-up" data-aos-delay="100">Welcome To Website</h2>
           <hr class="line"/>
         </header> <!-- ./section-header -->
         <div class="items">
-          <div class="item effect-x">
+          <div class="item effect-x" data-aos="fade-left" data-aos-delay="200">
             <i class="fas fa-cogs fa-fw"></i>
             <h3 class="title">Fully customizable</h3>
             <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fuga eligendi, deleniti quam mollitia natus asperiores laborum, ea, eaque quaerat provident excepturi!</p>
             <a class="link" href="#">Read More</a>
           </div> <!-- ./item -->
-          <div class="item effect-x">
+          <div class="item effect-x" data-aos="fade-up" data-aos-delay="200">
             <i class="fas fa-magic fa-fw"></i>
             <h3 class="title">Awesome Features</h3>
             <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fuga eligendi, deleniti quam mollitia natus asperiores laborum, ea, eaque quaerat provident excepturi!</p>
             <a class="link" href="#">Read More</a>
           </div> <!-- ./item -->
-          <div class="item effect-x">
+          <div class="item effect-x" data-aos="fade-right" data-aos-delay="300">
             <i class="fas fa-mobile-alt fa-fw"></i>
             <h3 class="title">Fully Responsive</h3>
             <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fuga eligendi, deleniti quam mollitia natus asperiores laborum, ea, eaque quaerat provident excepturi!</p>
@@ -81,112 +108,112 @@
       </div> <!-- ./container -->
     </div> <!-- ./about-us -->
     <!-- Start Portfolio -->
-    <div class="portfolio p-y">
+    <div class="portfolio p-y" id="portfolio">
       <div class="container">
         <header class="section-header">
-          <h2 class="title">Featured Works</h2>
+          <h2 class="title" data-aos="fade-up" data-aos-delay="100">Featured Works</h2>
           <hr class="line"/>
         </header> <!-- ./section-header -->
         <div class="box">
-          <div class="item">
+          <div class="item" data-aos="fade-left" data-aos-delay="200">
             <div class="image">
               <img src="assets/images/work/work1.webp" alt="Image Work 1" draggable="false"/>
             </div> <!-- ./image -->
             <div class="layer">
-              <h3 class="title"> Category</h3>
-              <h4 class="sub-title">Lorem, ipsum dolor.</h4>
-              <div class="icon">
+              <h3 class="title" data-aos="fade-up" data-aos-delay="100"> Category</h3>
+              <h4 class="sub-title" data-aos="fade-up" data-aos-delay="200">Lorem, ipsum dolor.</h4>
+              <div class="icon" data-aos="fade-up" data-aos-delay="300">
                 <i class="fas fa-edit fa-fw"></i>
                 <i class="fas fa-search fa-fw"></i>
               </div> <!-- ./icon -->
             </div> <!-- ./layer -->
           </div> <!-- ./item -->
-          <div class="item">
+          <div class="item" data-aos="fade-up" data-aos-delay="200">
             <div class="image">
               <img src="assets/images/work/work2.webp" alt="Image Work 2" draggable="false"/>
             </div> <!-- ./image -->
             <div class="layer">
-              <h3 class="title"> Category</h3>
-              <h4 class="sub-title">Lorem, ipsum dolor.</h4>
-              <div class="icon">
+              <h3 class="title" data-aos="fade-up" data-aos-delay="100"> Category</h3>
+              <h4 class="sub-title" data-aos="fade-up" data-aos-delay="200">Lorem, ipsum dolor.</h4>
+              <div class="icon" data-aos="fade-up" data-aos-delay="300">
                 <i class="fas fa-edit fa-fw"></i>
                 <i class="fas fa-search fa-fw"></i>
               </div> <!-- ./icon -->
             </div> <!-- ./layer -->
           </div> <!-- ./item -->
-          <div class="item">
+          <div class="item" data-aos="fade-down" data-aos-delay="200">
             <div class="image">
               <img src="assets/images/work/work3.webp" alt="Image Work 3" draggable="false"/>
             </div> <!-- ./image -->
             <div class="layer">
-              <h3 class="title"> Category</h3>
-              <h4 class="sub-title">Lorem, ipsum dolor.</h4>
-              <div class="icon">
+              <h3 class="title" data-aos="fade-up" data-aos-delay="210"> Category</h3>
+              <h4 class="sub-title" data-aos="fade-up" data-aos-delay="200">Lorem, ipsum dolor.</h4>
+              <div class="icon" data-aos="fade-up" data-aos-delay="300">
                 <i class="fas fa-edit fa-fw"></i>
                 <i class="fas fa-search fa-fw"></i>
               </div> <!-- ./icon -->
             </div> <!-- ./layer -->
           </div> <!-- ./item -->
-          <div class="item">
+          <div class="item" data-aos="fade-right" data-aos-delay="200">
             <div class="image">
               <img src="assets/images/work/work4.webp" alt="Image Work 4" draggable="false"/>
             </div> <!-- ./image -->
             <div class="layer">
-              <h3 class="title"> Category</h3>
-              <h4 class="sub-title">Lorem, ipsum dolor.</h4>
-              <div class="icon">
+              <h3 class="title" data-aos="fade-up" data-aos-delay="100"> Category</h3>
+              <h4 class="sub-title" data-aos="fade-up" data-aos-delay="200">Lorem, ipsum dolor.</h4>
+              <div class="icon" data-aos="fade-up" data-aos-delay="300">
                 <i class="fas fa-edit fa-fw"></i>
                 <i class="fas fa-search fa-fw"></i>
               </div> <!-- ./icon -->
             </div> <!-- ./item -->
           </div> <!-- ./layer -->
-          <div class="item">
+          <div class="item" data-aos="fade-left" data-aos-delay="200">
             <div class="image">
               <img src="assets/images/work/work5.webp" alt="Image Work 5" draggable="false"/>
             </div> <!-- ./image -->
             <div class="layer">
-              <h3 class="title"> Category</h3>
-              <h4 class="sub-title">Lorem, ipsum dolor.</h4>
-              <div class="icon">
+              <h3 class="title" data-aos="fade-up" data-aos-delay="100"> Category</h3>
+              <h4 class="sub-title" data-aos="fade-up" data-aos-delay="200">Lorem, ipsum dolor.</h4>
+              <div class="icon" data-aos="fade-up" data-aos-delay="300">
                 <i class="fas fa-edit fa-fw"></i>
                 <i class="fas fa-search fa-fw"></i>
               </div> <!-- ./icon -->
             </div> <!-- ./layer -->
           </div> <!-- ./item -->
-          <div class="item">
+          <div class="item" data-aos="fade-up" data-aos-delay="200">
             <div class="image">
               <img src="assets/images/work/work6.webp" alt="Image Work 6" draggable="false"/>
             </div> <!-- ./image -->
             <div class="layer">
-              <h3 class="title"> Category</h3>
-              <h4 class="sub-title">Lorem, ipsum dolor.</h4>
-              <div class="icon">
+              <h3 class="title" data-aos="fade-up" data-aos-delay="100"> Category</h3>
+              <h4 class="sub-title" data-aos="fade-up" data-aos-delay="200">Lorem, ipsum dolor.</h4>
+              <div class="icon" data-aos="fade-up" data-aos-delay="300">
                 <i class="fas fa-edit fa-fw"></i>
                 <i class="fas fa-search fa-fw"></i>
               </div> <!-- ./icon -->
             </div> <!-- ./layer -->
           </div> <!-- ./item -->
-          <div class="item">
+          <div class="item" data-aos="fade-down" data-aos-delay="200">
             <div class="image">
               <img src="assets/images/work/work1.webp" alt="Image Work 1" draggable="false"/>
             </div> <!-- ./image -->
             <div class="layer">
-              <h3 class="title"> Category</h3>
-              <h4 class="sub-title">Lorem, ipsum dolor.</h4>
-              <div class="icon">
+              <h3 class="title" data-aos="fade-up" data-aos-delay="100"> Category</h3>
+              <h4 class="sub-title" data-aos="fade-up" data-aos-delay="200">Lorem, ipsum dolor.</h4>
+              <div class="icon" data-aos="fade-up" data-aos-delay="300">
                 <i class="fas fa-edit fa-fw"></i>
                 <i class="fas fa-search fa-fw"></i>
               </div> <!-- ./icon -->
             </div> <!-- ./layer -->
           </div> <!-- ./item -->
-          <div class="item">
+          <div class="item" data-aos="fade-right" data-aos-delay="200">
             <div class="image">
               <img src="assets/images/work/work2.webp" alt="Image Work 2" draggable="false"/>
             </div> <!-- ./image -->
             <div class="layer">
-              <h3 class="title"> Category</h3>
-              <h4 class="sub-title">Lorem, ipsum dolor.</h4>
-              <div class="icon">
+              <h3 class="title" data-aos="fade-up" data-aos-delay="100"> Category</h3>
+              <h4 class="sub-title" data-aos="fade-up" data-aos-delay="200">Lorem, ipsum dolor.</h4>
+              <div class="icon" data-aos="fade-up" data-aos-delay="300">
                 <i class="fas fa-edit fa-fw"></i>
                 <i class="fas fa-search fa-fw"></i>
               </div> <!-- ./icon -->
@@ -196,14 +223,14 @@
       </div> <!-- ./container -->
     </div> <!-- ./Portfolio -->
     <!--* Start Offers -->
-    <div class="offers p-y">
+    <div class="offers p-y" id="services">
       <div class="container">
         <header class="section-header">
-          <h2 class="title">What we offers</h2>
+          <h2 class="title" data-aos="fade-up" data-aos-delay="100">What we offers</h2>
           <hr class="line"/>
         </header> <!-- ./section-header -->
         <div class="box">
-          <div class="item effect-x">
+          <div class="item effect-x" data-aos="fade-left" data-aos-delay="200">
             <div class="icon">
               <i class="far fa-gem fa-fw fa-lg"></i>
             </div> <!-- ./icon -->
@@ -212,7 +239,7 @@
               <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet. Ipsum eveniet in magni recusandae eius dolore ab ratione maxime!</p>
             </div> <!-- ./text -->
           </div> <!-- ./item -->
-          <div class="item effect-x">
+          <div class="item effect-x" data-aos="fade-up" data-aos-delay="200">
             <div class="icon">
               <i class="fas fa-rocket fa-fw fa-lg"></i>
             </div> <!-- ./icon -->
@@ -221,7 +248,7 @@
               <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet. Ipsum eveniet in magni recusandae eius dolore ab ratione maxime!</p>
             </div> <!-- ./text -->
           </div> <!-- ./item -->
-          <div class="item effect-x">
+          <div class="item effect-x" data-aos="fade-right" data-aos-delay="200">
             <div class="icon">
               <i class="fas fa-cogs fa-fw fa-lg"></i>
             </div> <!-- ./icon -->
@@ -230,7 +257,7 @@
               <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet. Ipsum eveniet in magni recusandae eius dolore ab ratione maxime!</p>
             </div> <!-- ./text -->
           </div> <!-- ./item -->
-          <div class="item effect-x">
+          <div class="item effect-x" data-aos="fade-left" data-aos-delay="200">
             <div class="icon">
               <i class="fab fa-atlassian fa-fw fa-lg"></i>
             </div> <!-- ./icon -->
@@ -239,7 +266,7 @@
               <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet. Ipsum eveniet in magni recusandae eius dolore ab ratione maxime!</p>
             </div> <!-- ./text -->
           </div> <!-- ./item -->
-          <div class="item effect-x">
+          <div class="item effect-x" data-aos="fade-up" data-aos-delay="200">
             <div class="icon">
               <i class="fas fa-pencil-alt fa-fw fa-lg"></i>
             </div> <!-- ./icon -->
@@ -248,7 +275,7 @@
               <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet. Ipsum eveniet in magni recusandae eius dolore ab ratione maxime!</p>
             </div> <!-- ./text -->
           </div> <!-- ./item -->
-          <div class="item effect-x">
+          <div class="item effect-x" data-aos="fade-right" data-aos-delay="200">
             <div class="icon">
               <i class="fas fa-flask fa-fw fa-lg"></i>
             </div> <!-- ./icon -->
@@ -266,20 +293,20 @@
         <div class="box">
           <div class="text">
             <header class="section-header">
-              <h2 class="title">Why Choose us</h2>
+              <h2 class="title" data-aos="fade-up" data-aos-delay="100">Why Choose us</h2>
               <hr class="line"/>
             </header> <!-- ./section-header -->
-            <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic eos excepturi magnam. Numquam autem labore repudiandae facilis, sapiente aperiam omnis fugiat officia? Iure debitis totam temporibus nihil dignissimos amet necessitatibus.</p>
+            <p class="desc" data-aos="fade-up" data-aos-delay="200">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic eos excepturi magnam. Numquam autem labore repudiandae facilis, sapiente aperiam omnis fugiat officia? Iure debitis totam temporibus nihil dignissimos amet necessitatibus.</p>
             <ul class="list">
-              <li><i class="fas fa-check-circle fa-fw fa-lg"></i>Example, with certain font-size to line-heigh</li>
-              <li><i class="fas fa-check-circle fa-fw fa-lg"></i>Note that, as of this comment</li>
-              <li><i class="fas fa-check-circle fa-fw fa-lg"></i>What you can do is the following.</li>
-              <li><i class="fas fa-check-circle fa-fw fa-lg"></i>Seems to be the best possible solution for me also</li>
-              <li><i class="fas fa-check-circle fa-fw fa-lg"></i>This problem has been plaguing us all for years.</li>
-              <li><i class="fas fa-check-circle fa-fw fa-lg"></i>In my opinion this is the best solution</li>
+              <li data-aos="fade-up" data-aos-delay="200"><i class="fas fa-check-circle fa-fw fa-lg"></i>Example, with certain font-size to line-heigh</li>
+              <li data-aos="fade-up" data-aos-delay="300"><i class="fas fa-check-circle fa-fw fa-lg"></i>Note that, as of this comment</li>
+              <li data-aos="fade-up" data-aos-delay="400"><i class="fas fa-check-circle fa-fw fa-lg"></i>What you can do is the following.</li>
+              <li data-aos="fade-up" data-aos-delay="500"><i class="fas fa-check-circle fa-fw fa-lg"></i>Seems to be the best possible solution for me also</li>
+              <li data-aos="fade-up" data-aos-delay="600"><i class="fas fa-check-circle fa-fw fa-lg"></i>This problem has been plaguing us all for years.</li>
+              <li data-aos="fade-up" data-aos-delay="700"><i class="fas fa-check-circle fa-fw fa-lg"></i>In my opinion this is the best solution</li>
             </ul>
           </div> <!-- ./text -->
-          <div class="slider owl-carousel owl-theme">
+          <div class="slider owl-carousel owl-theme" data-aos="fade-up" data-aos-delay="200">
             <div class="image">
               <img src="assets/images/background/background2.webp" alt="Choose us"/>
             </div> <!-- ./image -->
@@ -304,76 +331,76 @@
       <div class="overlay">
         <div class="container">
           <div class="box">
-            <div class="item">
+            <div class="item" data-aos="fade-left" data-aos-delay="100">
               <i class="icon fas fa-users fa-fw fa-2x"></i>
-              <h3 class="title">451</h3>
-              <h4 class="sub-title">Happy clients</h4>
+              <h3 class="title" data-aos="fade-up" data-aos-delay="200">451</h3>
+              <h4 class="sub-title" data-aos="fade-up" data-aos-delay="300">Happy clients</h4>
             </div> <!-- ./item -->
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-delay="100">
               <i class="icon fas fa-trophy fa-fw fa-2x"></i>
-              <h3 class="title">12</h3>
-              <h4 class="sub-title">Awards won</h4>
+              <h3 class="title" data-aos="fade-up" data-aos-delay="200">12</h3>
+              <h4 class="sub-title" data-aos="fade-up" data-aos-delay="300">Awards won</h4>
             </div> <!-- ./item -->
-            <div class="item">
+            <div class="item" data-aos="fade-down" data-aos-delay="100">
               <i class="icon fas fa-coffee fa-fw fa-2x"></i>
-              <h3 class="title">154K</h3>
-              <h4 class="sub-title">Cup of coffee</h4>
+              <h3 class="title" data-aos="fade-up" data-aos-delay="200">154K</h3>
+              <h4 class="sub-title" data-aos="fade-up" data-aos-delay="300">Cup of coffee</h4>
             </div> <!-- ./item -->
-            <div class="item">
+            <div class="item" data-aos="fade-right" data-aos-delay="100">
               <i class="icon fas fa-file fa-fw fa-2x"></i>
-              <h3 class="title">45</h3>
-              <h4 class="sub-title">Project Completed</h4>
+              <h3 class="title" data-aos="fade-up" data-aos-delay="200">45</h3>
+              <h4 class="sub-title" data-aos="fade-up" data-aos-delay="300">Project Completed</h4>
             </div> <!-- ./item -->
           </div> <!-- ./box -->
         </div> <!-- ./container -->
       </div> <!-- ./overlay -->
     </div> <!-- ./statistic -->
     <!-- Start Pricing Table -->
-    <div class="pricing p-y">
+    <div class="pricing p-y" id="prices">
       <header class="section-header">
-        <h2 class="title">Pricing Table</h2>
+        <h2 class="title" data-aos="fade-up" data-aos-delay="100">Pricing Table</h2>
         <hr class="line"/>
       </header> <!-- ./section-header -->
       <div class="container">
         <div class="plans">
-          <div class="item effect-y">
-            <h3 class="title">Basic Plan</h3>
+          <div class="item effect-y" data-aos="fade-left" data-aos-delay="200">
+            <h3 class="title" data-aos="fade-up" data-aos-delay="200">Basic Plan</h3>
             <div class="price">
               <h4 class="title">$9</h4>
               <span class="month">/ month</span>
             </div> <!-- ./price -->
             <ul class="price-list">
-              <li>1 GB desk space</li>
-              <li>100 GB Email Account</li>
-              <li>24/24 Support</li>
+              <li data-aos="fade-up" data-aos-delay="200">1 GB desk space</li>
+              <li data-aos="fade-up" data-aos-delay="300">100 GB Email Account</li>
+              <li data-aos="fade-up" data-aos-delay="400">24/24 Support</li>
             </ul> <!-- ./price-list -->
-            <button class="btn btn-primary">Purchase now</button>
+            <button class="btn btn-primary" data-aos="fade-up" data-aos-delay="500">Purchase now</button>
           </div> <!-- ./item -->
-          <div class="item effect-y">
-            <h3 class="title">Silver Plan</h3>
+          <div class="item effect-y" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="title" data-aos="fade-up" data-aos-delay="200">Silver Plan</h3>
             <div class="price">
               <h4 class="title">$19</h4>
               <span class="month">/ month</span>
             </div> <!-- ./price -->
             <ul class="price-list">
-              <li>1 GB desk space</li>
-              <li>100 GB Email Account</li>
-              <li>24/24 Support</li>
+              <li data-aos="fade-up" data-aos-delay="200">1 GB desk space</li>
+              <li data-aos="fade-up" data-aos-delay="300">100 GB Email Account</li>
+              <li data-aos="fade-up" data-aos-delay="400">24/24 Support</li>
             </ul> <!-- ./price-list -->
-            <button class="btn btn-primary">Purchase now</button>
+            <button class="btn btn-primary" data-aos="fade-up" data-aos-delay="500">Purchase now</button>
           </div> <!-- ./item -->
-          <div class="item effect-y">
-            <h3 class="title">Gold Plan</h3>
+          <div class="item effect-y" data-aos="fade-right" data-aos-delay="200">
+            <h3 class="title" data-aos="fade-up" data-aos-delay="200">Gold Plan</h3>
             <div class="price">
               <h4 class="title">$39</h4>
               <span class="month">/ month</span>
             </div> <!-- ./price -->
             <ul class="price-list">
-              <li>1 GB desk space</li>
-              <li>100 GB Email Account</li>
-              <li>24/24 Support</li>
+              <li data-aos="fade-up" data-aos-delay="200">1 GB desk space</li>
+              <li data-aos="fade-up" data-aos-delay="300">100 GB Email Account</li>
+              <li data-aos="fade-up" data-aos-delay="400">24/24 Support</li>
             </ul> <!-- ./price-list -->
-            <button class="btn btn-primary">Purchase now</button>
+            <button class="btn btn-primary" data-aos="fade-up" data-aos-delay="500">Purchase now</button>
           </div> <!-- ./item -->
         </div> <!-- ./plan -->
       </div> <!-- ./container -->
@@ -384,69 +411,69 @@
       <div class="container">
         <div class="owl-carousel owl-theme">
           <div class="box">
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-delay="100">
               <div class="info">
                 <img src="assets/images/Testimonial/perso1.webp" alt="Image person one"/>
                 <div class="name">
-                  <h3 class="username">Matters Diversity </h3>
-                  <h4 class="job-title">Software Engineer</h4>
+                  <h3 class="username" data-aos="fade-up" data-aos-delay="200">Matters Diversity </h3>
+                  <h4 class="job-title" data-aos="fade-up" data-aos-delay="300">Software Engineer</h4>
                 </div> <!-- ./name -->
               </div> <!-- ./info -->
-              <p class="desc">Are you ready to battle workplace burnout in 2022? In a recent survey, 70% of Australian workers highlighted that they feel they are ... It is time to break old patterns and set new examples.</p>
+              <p class="desc" data-aos="fade-up" data-aos-delay="400">Are you ready to battle workplace burnout in 2022? In a recent survey, 70% of Australian workers highlighted that they feel they are ... It is time to break old patterns and set new examples.</p>
             </div> <!-- ./item -->
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-delay="100">
               <div class="info">
                 <img src="assets/images/Testimonial/perso2.webp" alt="Image person two"/>
                 <div class="name">
-                  <h3 class="username">delivers dividends</h3>
-                  <h4 class="job-title">Accountant</h4>
+                  <h3 class="username" data-aos="fade-up" data-aos-delay="200">delivers dividends</h3>
+                  <h4 class="job-title" data-aos="fade-up" data-aos-delay="300">Accountant</h4>
                 </div> <!-- ./name -->
               </div> <!-- ./info -->
-              <p class="desc">Are you ready to battle workplace burnout in 2022? In a recent survey, 70% of Australian workers highlighted that they feel they are ... It is time to break old patterns and set new examples</p>
+              <p class="desc" data-aos="fade-up" data-aos-delay="400">Are you ready to battle workplace burnout in 2022? In a recent survey, 70% of Australian workers highlighted that they feel they are ... It is time to break old patterns and set new examples</p>
             </div> <!-- ./item -->
           </div> <!-- ./box -->
           <div class="box">
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-delay="100">
               <div class="info">
                 <img src="assets/images/Testimonial/perso2.webp" alt="Image person two"/>
                 <div class="name">
-                  <h3 class="username">John Doe </h3>
-                  <h4 class="job-title">Web designer</h4>
+                  <h3 class="username" data-aos="fade-up" data-aos-delay="200">John Doe </h3>
+                  <h4 class="job-title" data-aos="fade-up" data-aos-delay="300">Web designer</h4>
                 </div> <!-- ./name -->
               </div> <!-- ./info -->
-              <p class="desc">Are you ready to battle workplace burnout in 2022? In a recent survey, 70% of Australian workers highlighted that they feel they are ... It is time to break old patterns and set new examples.</p>
+              <p class="desc" data-aos="fade-up" data-aos-delay="400">Are you ready to battle workplace burnout in 2022? In a recent survey, 70% of Australian workers highlighted that they feel they are ... It is time to break old patterns and set new examples.</p>
             </div> <!-- ./item -->
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-delay="100">
               <div class="info">
                 <img src="assets/images/Testimonial/perso1.webp" alt="Image person one"/>
                 <div class="name">
-                  <h3 class="username">delivers dividends</h3>
-                  <h4 class="job-title">Graphic design</h4>
+                  <h3 class="username" data-aos="fade-up" data-aos-delay="200">delivers dividends</h3>
+                  <h4 class="job-title" data-aos="fade-up" data-aos-delay="300">Graphic design</h4>
                 </div> <!-- ./name -->
               </div> <!-- ./info -->
-              <p class="desc">Are you ready to battle workplace burnout in 2022? In a recent survey, 70% of Australian workers highlighted that they feel they are ... It is time to break old patterns and set new examples.</p>
+              <p class="desc" data-aos="fade-up" data-aos-delay="400">Are you ready to battle workplace burnout in 2022? In a recent survey, 70% of Australian workers highlighted that they feel they are ... It is time to break old patterns and set new examples.</p>
             </div> <!-- ./item -->
           </div> <!-- ./box -->
           <div class="box">
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-delay="100">
               <div class="info">
                 <img src="assets/images/Testimonial/perso1.webp" alt="Image person one"/>
                 <div class="name">
-                  <h3 class="username">Matters Diversity </h3>
-                  <h4 class="job-title">Software Engineer</h4>
+                  <h3 class="username" data-aos="fade-up" data-aos-delay="200">Matters Diversity </h3>
+                  <h4 class="job-title" data-aos="fade-up" data-aos-delay="300">Software Engineer</h4>
                 </div> <!-- ./name -->
               </div> <!-- ./info -->
-              <p class="desc">Are you ready to battle workplace burnout in 2022? In a recent survey, 70% of Australian workers highlighted that they feel they are ... It is time to break old patterns and set new examples.</p>
+              <p class="desc" data-aos="fade-up" data-aos-delay="400">Are you ready to battle workplace burnout in 2022? In a recent survey, 70% of Australian workers highlighted that they feel they are ... It is time to break old patterns and set new examples.</p>
             </div> <!-- ./item -->
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-delay="100">
               <div class="info">
                 <img src="assets/images/Testimonial/perso2.webp" alt="Image person two"/>
                 <div class="name">
-                  <h3 class="username">delivers dividends</h3>
-                  <h4 class="job-title">Accountant</h4>
+                  <h3 class="username" data-aos="fade-up" data-aos-delay="200">delivers dividends</h3>
+                  <h4 class="job-title" data-aos="fade-up" data-aos-delay="300">Accountant</h4>
                 </div> <!-- ./name -->
               </div> <!-- ./info -->
-              <p class="desc">Are you ready to battle workplace burnout in 2022? In a recent survey, 70% of Australian workers highlighted that they feel they are ... It is time to break old patterns and set new examples.</p>
+              <p class="desc" data-aos="fade-up" data-aos-delay="400">Are you ready to battle workplace burnout in 2022? In a recent survey, 70% of Australian workers highlighted that they feel they are ... It is time to break old patterns and set new examples.</p>
             </div> <!-- ./item -->
           </div> <!-- ./box -->
         </div> <!-- ./owl-carousel -->
@@ -454,14 +481,14 @@
      </div> <!-- ./overlay -->
     </div> <!-- ./testimonial -->
     <!--* Our Teams -->
-    <div class="our-team p-y">
+    <div class="our-team p-y" id="team">
       <div class="container">
         <header class="section-header">
-          <h2 class="title">Our Team</h2>
+          <h2 class="title" data-aos="fade-up" data-aos-delay="100">Our Team</h2>
           <hr class="line"/>
         </header> <!-- ./section-header -->
         <div class="box">
-          <div class="item effect-y">
+          <div class="item effect-y" data-aos="fade-left" data-aos-delay="200">
             <div class="image">
               <img src="assets/images/team/team1.webp" alt="Our Team"/>
               <div class="social-media">
@@ -472,11 +499,11 @@
               </div> <!-- ./social-media -->
             </div> <!-- ./image -->
             <div class="info">
-              <h3 class="name">Matters Diversity</h3>
-              <h4 class="job-title">Graphic Design</h4>
+              <h3 class="name" data-aos="fade-up" data-aos-delay="200">Matters Diversity</h3>
+              <h4 class="job-title" data-aos="fade-up" data-aos-delay="300">Graphic Design</h4>
             </div> <!-- ./info -->
           </div> <!-- ./item -->
-          <div class="item effect-y">
+          <div class="item effect-y" data-aos="fade-up" data-aos-delay="200">
             <div class="image">
               <img src="assets/images/team/team2.webp" alt="Our Team"/>
               <div class="social-media">
@@ -487,11 +514,11 @@
               </div> <!-- ./social-media -->
             </div> <!-- ./image -->
             <div class="info">
-              <h3 class="name">Matters Diversity</h3>
-              <h4 class="job-title">Software Engineer</h4>
+              <h3 class="name" data-aos="fade-up" data-aos-delay="200">Matters Diversity</h3>
+              <h4 class="job-title" data-aos="fade-up" data-aos-delay="300">Software Engineer</h4>
             </div> <!-- ./info -->
           </div> <!-- ./item -->
-          <div class="item effect-y">
+          <div class="item effect-y" data-aos="fade-right" data-aos-delay="200">
             <div class="image">
               <img src="assets/images/team/team3.webp" alt="Our Team"/>
               <div class="social-media">
@@ -502,93 +529,93 @@
               </div> <!-- ./social-media -->
             </div> <!-- ./image -->
             <div class="info">
-              <h3 class="name">Matters Diversity</h3>
-              <h4 class="job-title">Graphic Design</h4>
+              <h3 class="name" data-aos="fade-up" data-aos-delay="200">Matters Diversity</h3>
+              <h4 class="job-title" data-aos="fade-up" data-aos-delay="300">Graphic Design</h4>
             </div> <!-- ./info -->
           </div> <!-- ./item -->
         </div> <!-- ./box -->
       </div> <!-- ./container -->
     </div> <!-- ./our-team -->
     <!--* Start Recent News  -->
-    <div class="recent-news p-y">
+    <div class="recent-news p-y" id="blog">
       <div class="container">
         <header class="section-header">
-          <h2 class="title">Recent News</h2>
+          <h2 class="title" data-aos="fade-up" data-aos-delay="100">Recent News</h2>
           <hr class="line"/>
         </header> <!-- ./section-header -->
         <div class="box">
-          <div class="item">
+          <div class="item" data-aos="fade-left" data-aos-delay="100">
             <div class="image">
               <img src="assets/images/blog/blog1.webp" alt="Recent News"/>
             </div> <!-- ./image -->
-            <div class="info">
+            <div class="info" data-aos="fade-up" data-aos-delay="200">
               <i class="fas fa-user fa-fw"></i> <span>John Doe</span> <i class="fa fa-clock fa-fw"></i> <span>18 Oct</span> <i class="fas fa-comments fa-fw"></i> <span>57</span>
             </div>
-            <h3 class="title">Have a Sanity powered site up and running in minutes</h3>
-            <p class="desc">The template contains both a Sanity.io Sanity Studio and a front-end in Eleventy. Both are deployed on Netlify.</p>
-            <a class="link" href="">Read More <i class="fa fa-angle-double-right fa-fw"></i></a>
+            <h3 class="title" data-aos="fade-up" data-aos-delay="300">Have a Sanity powered site up and running in minutes</h3>
+            <p class="desc" data-aos="fade-up" data-aos-delay="400">The template contains both a Sanity.io Sanity Studio and a front-end in Eleventy. Both are deployed on Netlify.</p>
+            <a class="link" href="" data-aos="fade-up" data-aos-delay="500">Read More <i class="fa fa-angle-double-right fa-fw"></i></a>
           </div> <!-- ./item -->
-          <div class="item">
+          <div class="item" data-aos="fade-up" data-aos-delay="100">
             <div class="image">
               <img src="assets/images/blog/blog2.webp" alt="Recent News"/>
             </div> <!-- ./image -->
-            <div class="info">
+            <div class="info" data-aos="fade-up" data-aos-delay="200">
               <i class="fas fa-user fa-fw"></i> <span>John Doe</span> <i class="fa fa-clock fa-fw"></i> <span>18 Oct</span> <i class="fas fa-comments fa-fw"></i> <span>57</span>
             </div>
-            <h3 class="title">Use Sanity to power your favourite framework</h3>
-            <p class="desc">Want to make a template for Sanity and your favourite front-end framework? We’re still maturing sanity.io/create and our APIs, but do tell us about it on slack.sanity.io.</p>
-            <a class="link" href="">Read More <i class="fa fa-angle-double-right fa-fw"></i></a>
+            <h3 class="title" data-aos="fade-up" data-aos-delay="300">Use Sanity to power your favourite framework</h3>
+            <p class="desc" data-aos="fade-up" data-aos-delay="400">Want to make a template for Sanity and your favourite front-end framework? We’re still maturing sanity.io/create and our APIs, but do tell us about it on slack.sanity.io.</p>
+            <a class="link" href="" data-aos="fade-up" data-aos-delay="500">Read More <i class="fa fa-angle-double-right fa-fw"></i></a>
           </div> <!-- ./item -->
-          <div class="item">
+          <div class="item" data-aos="fade-right" data-aos-delay="100">
             <div class="image">
               <img src="assets/images/blog/blog3.webp" alt="Recent News"/>
             </div> <!-- ./image -->
-            <div class="info">
+            <div class="info" data-aos="fade-up" data-aos-delay="200">
               <i class="fas fa-user fa-fw"></i> <span>John Doe</span> <i class="fa fa-clock fa-fw"></i> <span>18 Oct</span> <i class="fas fa-comments fa-fw"></i> <span>57</span>
             </div>
-            <h3 class="title">Get vector icons and social logos on your website with Font Awesome</h3>
-            <p class="desc">This template repo is used by Sanity.io to easily create deployed and configured projects through a web interface. You can test it by creating this project.</p>
-            <a class="link" href="">Read More <i class="fa fa-angle-double-right fa-fw"></i></a>
+            <h3 class="title" data-aos="fade-up" data-aos-delay="300">Get vector icons and social logos on your website with Font Awesome</h3>
+            <p class="desc" data-aos="fade-up" data-aos-delay="400">This template repo is used by Sanity.io to easily create deployed and configured projects through a web interface. You can test it by creating this project.</p>
+            <a class="link" href=""data-aos="fade-up" data-aos-delay="500">Read More <i class="fa fa-angle-double-right fa-fw"></i></a>
           </div> <!-- ./item -->
         </div> <!-- ./box -->
       </div> <!-- ./container -->
     </div> <!-- ./recent-news -->
     <!--* Start Contact Us -->
-    <div class="contacts-us p-y">
+    <div class="contacts-us p-y" id="contact-us">
       <div class="container">
         <header class="section-header">
-          <h2 class="title">Get In Touch</h2>
+          <h2 class="title" data-aos="fade-up" data-aos-delay="100">Get In Touch</h2>
           <hr class="line"/>
         </header> <!-- ./section-header -->
         <div class="info">
-          <div class="item">
-            <i class=" fa fa-phone-alt fa-fw fa-2x"></i>
-            <h3 class="title">Phone</h3>
-            <a href="tel:+249123456789">+249 123 456 789</a>
+          <div class="item" data-aos="fade-left" data-aos-delay="200">
+            <i class=" fa fa-phone-alt fa-fw fa-2x" data-aos="fade-up" data-aos-delay="300"></i>
+            <h3 class="title" data-aos="fade-up" data-aos-delay="400">Phone</h3>
+            <a href="tel:+249123456789" data-aos="fade-up" data-aos-delay="500">+249 123 456 789</a>
           </div> <!-- ./item -->
-          <div class="item">
-            <i class=" fa fa-envelope fa-fw fa-2x"></i>
-            <h3 class="title">Email</h3>
-            <a href="mailto:suport@gmail.com">support@gmail.com</a>
+          <div class="item" data-aos="fade-up" data-aos-delay="200">
+            <i class=" fa fa-envelope fa-fw fa-2x" data-aos="fade-up" data-aos-delay="300"></i>
+            <h3 class="title" data-aos="fade-up" data-aos-delay="400">Email</h3>
+            <a href="mailto:suport@gmail.com" data-aos="fade-up" data-aos-delay="500">support@gmail.com</a>
           </div> <!-- ./item -->
-          <div class="item">
-            <i class=" fa fa-location-arrow fa-fw fa-2x"></i>
-            <h3 class="title">Address</h3>
-            <a href="">1739 Bubby Drive</a>
+          <div class="item" data-aos="fade-right" data-aos-delay="200">
+            <i class=" fa fa-location-arrow fa-fw fa-2x" data-aos="fade-up" data-aos-delay="300"></i>
+            <h3 class="title" data-aos="fade-up" data-aos-delay="400">Address</h3>
+            <a href="" data-aos="fade-up" data-aos-delay="500">1739 Bubby Drive</a>
           </div> <!-- ./item -->
         </div> <!-- ./info -->
         <form class="form">
           <div class="form-control">
-            <input type="text" name="name" id="name" placeholder="Name"/>
-            <input type="email" name="email" id="email" placeholder="Email"/>
+            <input type="text" name="name" id="name" placeholder="Name" data-aos="fade-left" data-aos-delay="200"/>
+            <input type="email" name="email" id="email" placeholder="Email" data-aos="fade-right" data-aos-delay="200"/>
           </div> <!-- ./form-control -->
-          <div class="form-control">
+          <div class="form-control" data-aos="fade-up" data-aos-delay="200">
             <input type="text" name="subject" id="subject" placeholder="Subject">
           </div> <!-- ./form-control -->
-          <div class="form-control">
+          <div class="form-control" data-aos="fade-up" data-aos-delay="200">
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
           </div> <!-- ./form-control -->
-          <div class="form-control">
+          <div class="form-control" data-aos="fade-up" data-aos-delay="200">
             <input class="btn btn-primary" type="submit" value="Send Message"/>
           </div> <!-- ./form-control -->
         </form> <!-- ./form -->
@@ -607,11 +634,12 @@
           <li><a href=""><i class="fab fa-instagram fa-fw"></i></a></li>
           <li><a href=""><i class="fab fa-youtube fa-fw"></i></a></li>
         </ul> <!-- ./social-links -->
-        <p class="copy-right">&copy; Copyright 2000-2021 by Data. All Rights Reserved. <br/>
+        <p class="copy-right">&copy; Copyright 2000-2021 by Data. All Rights Reserved.
           Made 💓 & ☕ By Mohammed Modather</p>
       </div> <!-- ./container -->
-    </footer>
+    </footer> <!-- ./footer -->
     <script src="js/jquery-3.5.min.js"></script>
+    <script src="js/aos.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
   </body>

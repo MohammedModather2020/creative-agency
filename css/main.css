@@ -27,6 +27,7 @@
    2.10- Recent News
    2.11- Contact US
    2.12- Footer 
+   2.13- NavBar Mobile
 * 3- Common Style
    3.0- Container Section
    3.1- Overlay 
@@ -54,17 +55,19 @@
   --secondaryColor:#2a2a2a;
   --ascentColor:#ffffff;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 /** 1.2- Body Element */
 body{
   font-family: 'Varela Round', sans-serif;
+  overflow-x: hidden;
 }
 /** 2- Section Style */
 /**  2.0- NavBar Header */
 .navbar{
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 999999;
 }
 .navbar .container{
   display: flex;
@@ -97,7 +100,7 @@ body{
   transition: width .5s ease-in-out;
 }
 .navbar .container .links > li:not(.dropdown) > a:hover:after,
-.navbar .container .links > li:not(.dropdown) > a.active:after{
+.navbar .container .links > li.active:not(.dropdown) > a:after{
   width: 100%;
 }
 .navbar .container .links li.dropdown{
@@ -109,6 +112,7 @@ body{
   left: 40%;
   right: 0;
   visibility: hidden;
+
   opacity: 0;
   bottom: -45px;
   width: 120px;
@@ -167,12 +171,14 @@ main .container .box .desc{
 /** 2.2- About Us */
 .about-us .items{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
 }
 .about-us .items .item{
   padding: 1rem;
   text-align: center;
+  flex-basis: 30%;
   border: 1px solid #e6e6e6;
   border-radius: .3rem;
 }
@@ -344,9 +350,7 @@ main .container .box .desc{
 /** 2.6- Statistic  */
 .statistic{
   position: relative;
-  background-image: url(../assets/images/background/background2.webp);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: url(../assets/images/background/background2.webp)  no-repeat fixed;
   background-size: cover;
   height: 350px;
 }
@@ -356,6 +360,7 @@ main .container .box .desc{
   justify-content: space-between;
   align-items: center;
   color: var(--ascentColor);
+  flex-wrap: wrap;
   text-align: center;
 }
 .statistic .box .item .icon{
@@ -373,6 +378,7 @@ main .container .box .desc{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   column-gap: 4rem;
   position: relative;
 }
@@ -426,10 +432,9 @@ main .container .box .desc{
 /** 2.8- Testimonial  */
 .testimonial{
   position: relative;
-  background-image: url(../assets/images/background/background3.webp);
+  background: url(../assets/images/background/background3.webp) no-repeat fixed;
   background-size: cover;
-  background-attachment: fixed;
-  height: 330px;
+  height: 350px;
 }
 .testimonial .box{
   height: 300px;
@@ -469,9 +474,11 @@ main .container .box .desc{
 .our-team .box{
   display: flex;
   justify-content: space-between;
-  column-gap: 4rem;
+  flex-wrap: wrap;
+  column-gap: 3rem;
 }
 .our-team .box .item{
+  flex-basis: 30%;
   text-align: center;
   position: relative;
   padding: 1.5rem 1rem;
@@ -594,6 +601,7 @@ main .container .box .desc{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-flow: wrap;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -641,17 +649,21 @@ footer.footer .social-links li i{
   width: 35px;
   color: var(--ascentColor);
   border-radius: .5rem;
-  background-color: #6195ff;
+  background-color: var(--primaryColor);
   line-height: 35px;
 }
 footer.footer .copy-right{
   font-size: .8rem;
+  width: 30%;
+  margin: auto;
   color: #888;
   margin-top: 1rem;
   line-height: 1.8;
 }
-
-
+/** 2.13- NavBar Mobile */
+.window{
+  display: none;
+}
 
 
 
