@@ -20,7 +20,7 @@
   overflow: hidden;
   transition: all .5s ease-out, background 1s ease-out;
   transition-delay: .2s;
-  z-index: 1
+  z-index: 999;
 }
 .window .header .burger-container {
   position: relative;
