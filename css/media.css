@@ -50,6 +50,9 @@
   .contacts-us .info .item {
     margin-bottom: 1rem;
   }
+  .our-team .box .item .image .social-media{
+    margin-right: 0.8rem;
+  }
 }
 @media (min-width:992px){
   .window{
